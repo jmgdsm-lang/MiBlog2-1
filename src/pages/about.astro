@@ -1,6 +1,8 @@
 ---
 const pageTitle = "Nosotros";
+// @ts-ignore: Allow importing CSS as a side-effect in Astro pages when no type declarations exist
 import '../styles/style.css';
+import Navigation from '../Components/Navigation.astro'
 ---
 
 <html lang="en">
@@ -14,13 +16,7 @@ import '../styles/style.css';
 		
 	</head>
 	<body>
-		<nav>
-			<a href="/">Inicio</a>
-        	<a href="/about">{pageTitle}</a>
-        	<a href="/blog">Blog</a>
-		</nav>
-        
-        
+		<Navigation />
 		<h1>Sobre nosotros</h1>
 		<h1>Bienvenidos a nuestro blog</h1>
 		<p>Esto es un párrafo</p>
